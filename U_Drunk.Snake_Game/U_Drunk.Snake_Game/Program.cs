@@ -18,6 +18,9 @@ namespace U_Drunk.Snake_Game
             Point p2 = new Point(4, 5, '#');
 
             p2.Draw();
+            Point p3 = new Point(3, 8, '$');
+            p3.Draw();
+          
 
 
 
