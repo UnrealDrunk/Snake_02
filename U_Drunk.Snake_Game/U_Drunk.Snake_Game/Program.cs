@@ -11,6 +11,9 @@ namespace U_Drunk.Snake_Game
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World");
+
+            Console.WriteLine("Really World");
+
         }
     }
 }
