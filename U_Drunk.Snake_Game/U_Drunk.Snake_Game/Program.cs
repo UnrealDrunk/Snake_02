@@ -25,6 +25,8 @@ namespace U_Drunk.Snake_Game
 
             p2.Draw();
 
+            Console.WriteLine("Cool");
+
 
 
 
