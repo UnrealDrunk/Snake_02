@@ -23,6 +23,11 @@ namespace U_Drunk.Snake_Game
             leftLine.Drow();
             rightLine.Drow();
 
+            Point p = new Point(4, 5, '*');
+            p.Draw();
+            Console.CursorVisible = false;
+            Console.ReadLine();
+
 
 
 
