@@ -10,19 +10,18 @@ namespace U_Drunk.Snake_Game
     {
         static void Main(string[] args)
         {
-            Point p1 = new Point(1, 3,'*');
-       
+            //Console.SetBufferSize(85, 30);
+            // отрисовка рамочки
 
-            p1.Draw();
+            HorizontalLine upLine = new HorizontalLine(0, 78, 0, '+');
+            HorizontalLine downLine = new HorizontalLine(0, 78, 24, '+');
+            VerticalLine leftLine = new VerticalLine(0, 24, 0, '+');
+            VerticalLine rightLine = new VerticalLine(0, 24, 78, '+');
 
-            Point p2 = new Point(4, 5, '#');
-
-            p2.Draw();
-
-            List<int> numList = new List<int>();
-
-            HorizontalLine line = new HorizontalLine(5,10,8,'+');
-            line.Drow();
+            upLine.Drow();
+            downLine.Drow();
+            leftLine.Drow();
+            rightLine.Drow();
 
 
 
