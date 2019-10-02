@@ -69,7 +69,7 @@ namespace U_Drunk.Snake_Game
             }
 
 
-
+            Console.ReadLine();
 
 
 
