@@ -13,17 +13,21 @@ namespace U_Drunk.Snake_Game
             Point p1 = new Point(1, 3,'*');
        
 
-            p1.Draw();
+           // p1.Draw();
 
             Point p2 = new Point(4, 5, '#');
 
-            p2.Draw();
+           // p2.Draw();
 
             List<int> numList = new List<int>();
 
             HorizontalLine line = new HorizontalLine(5,10,8,'+');
             line.Drow();
 
+            VerticalLine vLine = new VerticalLine(4, 2, 25, '/');
+            vLine.Drow();
+
+            Console.ReadLine();
 
 
 
