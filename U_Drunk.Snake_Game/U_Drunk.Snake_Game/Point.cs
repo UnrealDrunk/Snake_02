@@ -28,6 +28,13 @@ namespace U_Drunk.Snake_Game
             sym = _sym;
         }
 
+        public Point(Point p)
+        {
+            x = p.x;
+            y = p.y;
+            sym = p.sym;
+        }
+
 
         public void Draw()
         {
@@ -35,5 +42,32 @@ namespace U_Drunk.Snake_Game
             Console.WriteLine(sym);
         }
 
+
+        public void Move(int offset, Direction direction)
+        {
+            if (direction == Direction.LEFT)
+            {
+                x = x - offset;
+            }
+            if (direction == Direction.RIGHT)
+            {
+                x = x + offset;
+            }
+            if (direction == Direction.UP)
+            {
+                y = y - offset;
+            }
+            if (direction == Direction.DOWN)
+            {
+                y = y + offset;
+            }
+        }
+
+            public override string ToString()
+        {
+            return x + ", " + y + ", " + sym;
+        }
     }
+
+    
 }
