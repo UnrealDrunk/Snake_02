@@ -69,6 +69,6 @@ namespace U_Drunk.Snake_Game
                 return false;
         }
 
-
+        //вот так вот
     }
 }
