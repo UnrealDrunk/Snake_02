@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Threading;
+
 
 namespace U_Drunk.Snake_Game
 {
@@ -23,25 +25,27 @@ namespace U_Drunk.Snake_Game
             leftLine.Drow();
             rightLine.Drow();
 
+            Console.CursorVisible = false;
+
             Point p = new Point(4, 5, '*');
             Snake snake = new Snake(p, 4, Direction.RIGHT);
             snake.Drow();
-            snake.Move();
-            snake.Move();
-            snake.Move();
-            snake.Move();
-            snake.Move();
-            snake.Move();
-            snake.Move();
-            snake.Move();
-            snake.Move();
-            snake.Move();
-            snake.Move();
-            snake.Move();
 
-
-
-
+            while(true)
+            {
+                if(Console.KeyAvailable)
+                {
+                    ConsoleKeyInfo key = Console.ReadKey();
+                    snake.HandleKey(key.Key);
+             
+                }
+                Thread.Sleep(100);
+                snake.Move();
+              
+            }
+            
+           
+        
 
         }
 
