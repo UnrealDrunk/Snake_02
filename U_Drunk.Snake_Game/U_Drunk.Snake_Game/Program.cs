@@ -30,6 +30,7 @@ namespace U_Drunk.Snake_Game
 
             Console.CursorVisible = false;
             Console.ReadLine();
+           // Console.ReadLine();
 
 
 
