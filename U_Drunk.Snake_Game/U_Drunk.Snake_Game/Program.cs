@@ -38,7 +38,7 @@ namespace U_Drunk.Snake_Game
             snake.Move();
             snake.Move();
             snake.Move();
-
+            Console.ReadLine();
 
 
 
